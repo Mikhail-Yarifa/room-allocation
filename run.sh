@@ -4,9 +4,9 @@
 
 ./gradlew build
 
-# Change into the build libs directory
-cd build/libs
+#Build docker image
+docker image build -t allocation-app:latest .
 
-# Start the application
-java -jar room-allocation-0.0.1-SNAPSHOT.jar
+#Run container
+docker run -p 8080:8080 allocation-app:latest
 

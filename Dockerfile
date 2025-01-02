@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:17-oracle
 
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
